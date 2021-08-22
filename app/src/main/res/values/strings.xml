@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">FastFood</string>
+    <string name="bienvenida1">FAST FOOD</string>
+    <string name="bienvenida2">SIENTE EL SABOR</string>
+    <string name="registro">¡Registrate para comenzar!</string>
+    <string name="ingreso">INGRESAR</string>
+
+    <string name="detalle_pedido">Detalle de pedido</string>
+    <string name="detalle_pago">Detalle del pago</string>
+    <string name="nota">Nota</string>
+    <string name="detalle_envio">Detalle del envío</string>
+
+    <string name="estado_pedido1">Preparación</string>
+    <string name="estado_pedido2">Empaquetado</string>
+    <string name="estado_pedido3">Enviado</string>
+    <string name="estado_pedido4">INGRESAR</string>
+
 </resources>
