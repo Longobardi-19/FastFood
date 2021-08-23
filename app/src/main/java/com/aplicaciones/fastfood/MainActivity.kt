@@ -1,5 +1,6 @@
 package com.aplicaciones.fastfood
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.aplicaciones.fastfood.databinding.ActivityMainBinding
@@ -19,5 +20,15 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         auth = Firebase. auth
+
+        binding.salir.setOnClickListener{
+            signOut()
+        }
+
+    }
+    private fun signOut(){
+        Firebase.auth.signOut()
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
     }
 }

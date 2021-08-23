@@ -36,13 +36,13 @@ class LoginActivity : AppCompatActivity() {
             }
         }
     }
-  //  public override fun onStart() {
-//        super.onStart()
-//        val currentUser = auth.currentUser
-//        if(currentUser != null){
-//            reload();
-//        }
-//    }
+   public override fun onStart() {
+        super.onStart()
+       val currentUser = auth.currentUser
+       if(currentUser != null){
+            reload();
+        }
+    }
 
     private fun logIn(email: String, password : String){
         auth.signInWithEmailAndPassword(email, password)
