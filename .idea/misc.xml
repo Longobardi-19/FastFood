@@ -3,14 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Documents/AndroidStudioProjects/FastFood/app/src/main/res/drawable/ic_back.xml" value="0.20277777777777778" />
         <entry key="..\:/Documents/AndroidStudioProjects/FastFood/app/src/main/res/drawable/ic_logo_principal.xml" value="0.1" />
         <entry key="..\:/Documents/AndroidStudioProjects/FastFood/app/src/main/res/drawable/shape_parrafo.xml" value="0.2203125" />
         <entry key="..\:/Documents/AndroidStudioProjects/FastFood/app/src/main/res/drawable/shape_topico.xml" value="0.2203125" />
         <entry key="..\:/Documents/AndroidStudioProjects/FastFood/app/src/main/res/drawable/white_background_edittext.xml" value="0.2203125" />
         <entry key="..\:/Documents/AndroidStudioProjects/FastFood/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Documents/AndroidStudioProjects/FastFood/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Documents/AndroidStudioProjects/FastFood/app/src/main/res/layout/fragment_example.xml" value="0.25" />
         <entry key="..\:/Documents/AndroidStudioProjects/FastFood/app/src/main/res/layout/fragment_login.xml" value="0.20416666666666666" />
-        <entry key="..\:/Documents/AndroidStudioProjects/FastFood/app/src/main/res/layout/fragment_order_detail.xml" value="0.18" />
+        <entry key="..\:/Documents/AndroidStudioProjects/FastFood/app/src/main/res/layout/fragment_order_detail.xml" value="0.75" />
         <entry key="..\:/Documents/AndroidStudioProjects/FastFood/app/src/main/res/layout/fragment_orders.xml" value="0.20416666666666666" />
         <entry key="..\:/Documents/AndroidStudioProjects/FastFood/app/src/main/res/layout/fragment_splash_screen.xml" value="0.20416666666666666" />
       </map>
