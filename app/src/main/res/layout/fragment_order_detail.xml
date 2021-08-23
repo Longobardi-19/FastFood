@@ -3,43 +3,5 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/alto_detail_order_tag"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp">
-                <TextView
-                    android:id="@+id/tvItemScheduleTag"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    android:lines="1"
-                    android:text="Tópico"
-                    android:textColor="#FFFFFF"
-                    android:background="@drawable/shape_topico"
-                    android:layout_centerInParent="true"
-                    android:textStyle="bold"/>
-            </RelativeLayout>
-
-            />
-
-            <RelativeLayout
-                android:layout_width="@dimen/ancho_detail_order_tag"
-                android:layout_height="@dimen/alto_detail_order_tag"
-                android:background="@color/color_maracuya"
-                android:orientation="horizontal"
-            />
-
-        </LinearLayout>
-    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
