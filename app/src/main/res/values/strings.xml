@@ -3,7 +3,11 @@
     <string name="bienvenida1">FAST FOOD</string>
     <string name="bienvenida2">SIENTE EL SABOR</string>
     <string name="registro">¡Registrate para comenzar!</string>
-    <string name="ingreso">INGRESAR</string>
+    <string name="login">LOGIN</string>
+    <string name="titulo">FAST FOOD</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="ingresar">INGRESAR</string>
 
     <string name="detalle_pedido">Detalle de pedido</string>
     <string name="detalle_pago">Detalle del pago</string>
