@@ -1,5 +1,6 @@
 package com.aplicaciones.fastfood
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,7 +10,7 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 
-class SplashScreen : AppCompatActivity() {
+class SplashScreen : Activity() {
     val SPLASH_CREEN = 4000
     private lateinit var desplazamiento_arriba: Animation
     private lateinit var desplazamiento_abajo: Animation
@@ -20,8 +21,7 @@ class SplashScreen : AppCompatActivity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_splash_screen)
 
-        val actionBar = supportActionBar
-        actionBar!!.hide()
+
         desplazamiento_arriba = AnimationUtils.loadAnimation(this, R.anim.desplazamiento_arriba)
         desplazamiento_abajo = AnimationUtils.loadAnimation(this, R.anim.desplazamiento_abajo)
 
