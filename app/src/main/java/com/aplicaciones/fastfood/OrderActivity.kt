@@ -11,7 +11,7 @@ class OrderActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.producto_menu, menu)
+        menuInflater.inflate(R.menu.order_menu, menu)
 
         return super.onCreateOptionsMenu(menu)
     }
