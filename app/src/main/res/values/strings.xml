@@ -10,6 +10,8 @@
     <string name="ingresar">INGRESAR</string>
     <string name="tag_order">ORDEN N°</string>
 
+    <string name="num_order">0000</string>
+
     <string name="detalle_pedido">Detalle de pedido</string>
     <string name="detalle_pago">Detalle del pago</string>
     <string name="nota">Nota</string>
