@@ -52,14 +52,14 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tag_num_order"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tag_num_order"
+                    android:layout_marginLeft="140dp"
                     android:text="@string/num_order"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
                     android:textColor="@color/color_white"
-                    android:=""
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </RelativeLayout>
         </LinearLayout>
