@@ -42,6 +42,7 @@ class OrderActivity : AppCompatActivity() {
             direccion_order.text = order.direccion
             referencia_order.text = order.referencia
             estadoOrden_order.text = order.estadoOrden
+
         })
 
 

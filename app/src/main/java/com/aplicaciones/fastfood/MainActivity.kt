@@ -28,8 +28,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         auth = Firebase.auth
 
-
-
         var listaOrders = emptyList<Order>()
         val database = AppDatabase.getDatabase(this)
 
@@ -55,14 +53,14 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    /*override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.order_menu, menu)
 
         return super.onCreateOptionsMenu(menu)
     }
+*/
 
-
-    override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
+    /*override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
         if(keyCode== KeyEvent.KEYCODE_BACK){
            var builder = AlertDialog.Builder(this)
 
@@ -83,6 +81,6 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onKeyDown(keyCode, event)
 
-    }
+    }*/
 
 }

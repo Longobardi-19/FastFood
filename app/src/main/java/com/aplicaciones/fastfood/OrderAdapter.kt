@@ -14,8 +14,8 @@ class OrderAdapter (private val mContext: Context,
            val layout = LayoutInflater.from(mContext).inflate(R.layout.item_order,parent, false)
             val order = listaOrders[position]
 
-           layout.pedido.text = order.pedido
-           layout.precio.text = "S/.${order.precio}"
+           layout.order_id.text = order.idOrder.toString()
+           layout.total.text = "S/.${order.total}"
            layout.imageView.setImageResource(order.imagen)
            return layout
        }
