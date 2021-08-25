@@ -62,8 +62,8 @@ class LoginActivity : AppCompatActivity() {
             }
     }
 
-    private fun reload(){
-        val intent = Intent (this, MainActivity::class.java)
-        this.startActivity(intent)
-    }
+   private fun reload(){
+      val intent = Intent (this, MainActivity::class.java)
+      this.startActivity(intent)
+   }
 }
