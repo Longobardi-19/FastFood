@@ -12,7 +12,7 @@ class Order (
     val pedido: String,
     val precio: Double,
     val cantidad: Int,
-    val fecha: Date,
+    val fecha: String,
     val cliente: String,
     val tipoPago: String,
     val notaOrden: String,

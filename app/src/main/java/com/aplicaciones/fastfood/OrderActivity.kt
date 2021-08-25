@@ -10,6 +10,7 @@ import androidx.lifecycle.Observer
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.android.synthetic.main.activity_main.*
 
 class OrderActivity : AppCompatActivity() {
 
@@ -70,6 +71,7 @@ class OrderActivity : AppCompatActivity() {
                     this@OrderActivity.finish()
                 }
             }
+
         }
 
         return super.onOptionsItemSelected(item)
