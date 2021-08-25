@@ -34,5 +34,8 @@ class SplashScreen : Activity() {
             startActivity(intent)
             finish()
         }, SPLASH_CREEN.toLong())
+
+        
+
     }
 }
