@@ -105,8 +105,8 @@
                         android:gravity="center">
 
                         <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
                             android:src="@drawable/ic_user"/>
 
                         <LinearLayout
@@ -124,7 +124,8 @@
                                 android:id="@+id/name"
                                 android:text="Nombre"
                                 android:textStyle="bold"
-                                android:textSize="10dp"
+                                android:textSize="15dp"
+                                android:textColor="@color/color_black"
                                 />
 
                                 <TextView
@@ -134,7 +135,8 @@
                                     android:text="Apellido"
                                     android:layout_marginStart="4dp"
                                     android:textStyle="bold"
-                                    android:textSize="10dp"/>
+                                    android:textSize="15dp"
+                                    android:textColor="@color/color_black"/>
 
                             </LinearLayout>
 
@@ -143,12 +145,13 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
                                 android:text="Fecha"
-                                android:textSize="8.5dp"/>
+                                android:textSize="12dp"/>
 
                         </LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/itemOrder"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -159,40 +162,43 @@
                             android:layout_height="wrap_content"
                             android:text="x"
                             android:textStyle="bold"
-                            android:textSize="8.5dp"/>
+                            android:textSize="12dp"
+                            android:textColor="@color/color_black"/>
                         <TextView
                             android:id="@+id/cantidad"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="10"
+                            android:text="2"
                             android:textStyle="bold"
-                            android:textSize="8.5dp"/>
+                            android:textSize="12dp"
+                            android:textColor="@color/color_black"/>
 
                         <LinearLayout
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center">
                         <TextView
                             android:id="@+id/orderName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
                             android:text="Hamburguesa clásica"
                             android:textStyle="bold"
-                            android:textSize="8.5dp"/>
+                            android:textSize="12dp"
+                            android:textColor="@color/color_black"/>
 
                         </LinearLayout>
-
-                        <TextView
-                            android:id="@+id/precio"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:text="9.00"
-                            android:textStyle="bold"
-                            android:textSize="8.5dp"/>
-
-                    </LinearLayout>
-
+                            <TextView
+                                android:id="@+id/precio"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="50dp"
+                                android:text="9.00"
+                                android:textStyle="bold"
+                                android:textSize="12dp"
+                                android:textColor="@color/color_black"/>
+                        </LinearLayout>
                     </LinearLayout>
                 </RelativeLayout>
             </LinearLayout>
@@ -216,10 +222,44 @@
                 <RelativeLayout
                     android:layout_width="300dp"
                     android:layout_height="@dimen/alto_detail_order_tag"
+                    android:gravity="center"
                     android:ellipsize="end"
                     android:lines="1"
                     android:background="@drawable/shape_topico_pedido">
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_wallet"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginStart="4dp">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tipoPago"
+                                        android:text="Tipo de pago"
+                                        android:textStyle="bold"
+                                        android:textSize="15dp"
+                                        android:textColor="@color/color_black"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
                 </RelativeLayout>
             </LinearLayout>
 
@@ -241,10 +281,17 @@
 
                 <RelativeLayout
                     android:layout_width="300dp"
-                    android:layout_height="@dimen/alto_detail_order_tag"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:ellipsize="end"
                     android:lines="1"
                     android:background="@drawable/shape_topico_pedido">
+
+                    <TextView
+                        android:id="@+id/notaOrder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Con todas sus cremas" />
 
                 </RelativeLayout>
             </LinearLayout>
@@ -269,8 +316,64 @@
                     android:layout_width="300dp"
                     android:layout_height="80dp"
                     android:ellipsize="end"
+                    android:gravity="center"
                     android:lines="1"
                     android:background="@drawable/shape_topico_pedido">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ic_map"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="4dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/direccion"
+                                    android:text="Urb. California Mz. J Lt. 20"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:textColor="@color/color_black"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Referencia: "
+                                    android:textSize="12dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/referencia"
+                                    android:text="Al costado del Grifo San Judas Tadeo"
+                                    android:textSize="12dp"
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
 
                 </RelativeLayout>
             </LinearLayout>
