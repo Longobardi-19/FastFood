@@ -99,7 +99,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_marginTop="5dp"
                         android:orientation="horizontal"
                         android:gravity="center">
@@ -188,6 +188,34 @@
                                 android:textStyle="bold"
                                 android:textSize="12dp"
                                 android:textColor="@color/color_black"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/color_black"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="right">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:text="Total"
+                                android:textColor="@color/color_black"
+                                android:textSize="12dp"
+                                />
+                            <TextView
+                                android:id="@+id/precioTotal_order"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="55dp"
+                                android:text="18.00"
+                                android:textColor="@color/color_black"
+                                android:textSize="12dp"
+                                android:layout_gravity=""/>
                         </LinearLayout>
                     </LinearLayout>
                 </RelativeLayout>
@@ -312,7 +340,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:orientation="horizontal"
                         android:gravity="center">
 
