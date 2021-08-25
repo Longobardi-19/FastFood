@@ -56,7 +56,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/idOrder"
+                        android:id="@+id/order_id"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="160dp"
@@ -121,7 +121,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/name"
+                                android:id="@+id/cliente_order"
                                 android:text="Nombres y Apellidos"
                                 android:textStyle="bold"
                                 android:textSize="15dp"
@@ -132,6 +132,7 @@
                             </LinearLayout>
 
                             <TextView
+                                android:id="@+id/fecha_order"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
@@ -142,7 +143,6 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/itemOrder"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -156,7 +156,7 @@
                             android:textSize="12dp"
                             android:textColor="@color/color_black"/>
                         <TextView
-                            android:id="@+id/cantidad"
+                            android:id="@+id/cantidad_order"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="2"
@@ -169,7 +169,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center">
                         <TextView
-                            android:id="@+id/orderName"
+                            android:id="@+id/pedido_order"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
@@ -181,7 +181,7 @@
 
                         </LinearLayout>
                             <TextView
-                                android:id="@+id/precio"
+                                android:id="@+id/precio_order"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="50dp"
@@ -239,9 +239,9 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="10dp">
                                     <TextView
+                                        android:id="@+id/tipoPago_order"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:id="@+id/tipoPago"
                                         android:text="Tipo de pago"
                                         android:textStyle="bold"
                                         android:textSize="15dp"
@@ -279,7 +279,7 @@
                     android:background="@drawable/shape_topico_pedido">
 
                     <TextView
-                        android:id="@+id/notaOrder"
+                        android:id="@+id/notaOrden_order"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Con todas sus cremas" />
@@ -333,9 +333,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp">
                                 <TextView
+                                    android:id="@+id/direccion_order"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/direccion"
                                     android:text="Urb. California Mz. J Lt. 20"
                                     android:textStyle="bold"
                                     android:textSize="15dp"
@@ -355,9 +355,9 @@
                                     android:textSize="12dp"
                                     />
                                 <TextView
+                                    android:id="@+id/referencia_order"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/referencia"
                                     android:text="Al costado del Grifo San Judas Tadeo"
                                     android:textSize="12dp"
                                     />
@@ -365,6 +365,38 @@
 
                         </LinearLayout>
                     </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:layout_margin="10.5dp">
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Estado de pedido"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:background="@drawable/shape_topico_pedido">
+
+                    <TextView
+                        android:id="@+id/estadoOrden_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Estado de pedido" />
 
                 </RelativeLayout>
             </LinearLayout>

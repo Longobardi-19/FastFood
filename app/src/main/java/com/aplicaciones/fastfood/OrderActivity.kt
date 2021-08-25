@@ -11,6 +11,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_order.*
 
 class OrderActivity : AppCompatActivity() {
 
@@ -31,8 +32,9 @@ class OrderActivity : AppCompatActivity() {
         orderLiveData.observe(this, Observer {
             order = it
             pedido_order.text = order.pedido
+            order_id.text = order.idOrder.toString()
             precio_order.text = "S/.${order.precio}"
-            cantidad_order.text = order.cantidad
+            cantidad_order.text = order.cantidad.toString()
             fecha_order.text = order.fecha
             cliente_order.text = order.cliente
             tipoPago_order.text = order.tipoPago
@@ -40,10 +42,6 @@ class OrderActivity : AppCompatActivity() {
             direccion_order.text = order.direccion
             referencia_order.text = order.referencia
             estadoOrden_order.text = order.estadoOrden
-            total_order.text = order.total
-            imagen.setImageResource(order.imagen)
-
-
         })
 
 
