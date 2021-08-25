@@ -9,16 +9,18 @@ import java.util.*
 @Entity(tableName= "orders")
 class Order (
 
-    val nom_pedido: String,
+    val pedido: String,
     val precio: Double,
     val cantidad: Int,
     val fecha: Date,
     val cliente: String,
-    val tipo_pago: String,
-    val nota_orden: String,
+    val tipoPago: String,
+    val notaOrden: String,
     val direccion: String,
     val referencia: String,
-    val estado_orden: String,
+    val estadoOrden: String,
+    val imagen: Int,
+    val total: Double,
     @PrimaryKey(autoGenerate = true)
     var idOrder: Int=0
 

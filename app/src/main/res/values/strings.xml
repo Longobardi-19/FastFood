@@ -21,5 +21,6 @@
     <string name="estado_pedido2">Empaquetado</string>
     <string name="estado_pedido3">Enviado</string>
     <string name="estado_pedido4">INGRESAR</string>
+    <string name="salir">salir</string>
 
 </resources>
