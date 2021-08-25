@@ -6,9 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".OrderActivity">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -32,35 +30,33 @@
                         android:ellipsize="end"
                         android:lines="1"
                         android:background="@drawable/shape_topico"
-                        android:layout_centerInParent="true"
-                        />
+                        android:layout_centerInParent="true" />
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="300dp"
                     android:layout_height="55dp"
                     android:layout_margin="10dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:gravity="center_vertical"
                     android:ellipsize="end"
                     android:lines="1"
-                    android:background="@drawable/shape_topico"
-                    android:layout_centerInParent="true">
+                    android:background="@drawable/shape_topico">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginStart="50dp"
                         android:text="@string/tag_order"
                         android:textColor="@color/color_white"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/tag_num_order"
+                        android:id="@+id/idOrder"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="160dp"
+                        android:layout_marginStart="160dp"
                         android:text="@string/num_order"
                         android:textColor="@color/color_white"
                         android:textSize="20sp"
@@ -72,7 +68,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="right"
+                android:gravity="end"
                 android:orientation="vertical"
                 android:layout_margin="10.5dp">
                 <LinearLayout
@@ -87,19 +83,121 @@
 
                 <RelativeLayout
                     android:layout_width="300dp"
-                    android:layout_height="150dp"
+                    android:layout_height="wrap_content"
                     android:ellipsize="end"
                     android:lines="1"
                     android:background="@drawable/shape_topico_pedido"
-                    android:layout_centerInParent="true">
+                    android:orientation="vertical">
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_user"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="4dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/name"
+                                android:text="Nombre"
+                                android:textStyle="bold"
+                                android:textSize="10dp"
+                                />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/apellido"
+                                    android:text="Apellido"
+                                    android:layout_marginStart="4dp"
+                                    android:textStyle="bold"
+                                    android:textSize="10dp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="Fecha"
+                                android:textSize="8.5dp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="x"
+                            android:textStyle="bold"
+                            android:textSize="8.5dp"/>
+                        <TextView
+                            android:id="@+id/cantidad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:textStyle="bold"
+                            android:textSize="8.5dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+                        <TextView
+                            android:id="@+id/orderName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hamburguesa clásica"
+                            android:textStyle="bold"
+                            android:textSize="8.5dp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/precio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="9.00"
+                            android:textStyle="bold"
+                            android:textSize="8.5dp"/>
+
+                    </LinearLayout>
+
+                    </LinearLayout>
                 </RelativeLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="right"
+                android:gravity="end"
                 android:orientation="vertical"
                 android:layout_margin="10.5dp">
                 <LinearLayout
@@ -117,13 +215,65 @@
                     android:layout_height="@dimen/alto_detail_order_tag"
                     android:ellipsize="end"
                     android:lines="1"
-                    android:background="@drawable/shape_topico_pedido"
-                    android:layout_centerInParent="true">
+                    android:background="@drawable/shape_topico_pedido">
 
                 </RelativeLayout>
             </LinearLayout>
 
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:layout_margin="10.5dp">
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nota"/>
+                </LinearLayout>
 
-    </FrameLayout>
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="@dimen/alto_detail_order_tag"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:background="@drawable/shape_topico_pedido">
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:layout_margin="10.5dp">
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detalle_envio"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="80dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:background="@drawable/shape_topico_pedido">
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
