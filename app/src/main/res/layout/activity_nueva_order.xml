@@ -7,30 +7,159 @@
     android:layout_height="match_parent"
     tools:context=".NuevaOrderActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATOS DEL CLIENTE"
+            android:textStyle="bold"
+            android:textColor="@color/color_black"
+            android:textSize="18sp"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+            <EditText
+                android:id="@+id/cliente_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="Nombres y Apellidos"/>
+
+            <EditText
+                android:id="@+id/direccion_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="Dirección"/>
+
+            <EditText
+                android:id="@+id/referencia_et"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Referencia"/>
+
+
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATOS DEL PEDIDO"
+            android:textStyle="bold"
+            android:textColor="@color/color_black"
+            android:textSize="18sp"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <EditText
+            android:id="@+id/fecha_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Fecha"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/pedido_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Pedido"/>
+
+        <EditText
+            android:id="@+id/precio_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Precio"/>
+
+        <EditText
+            android:id="@+id/cantidad_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Cantidad"/>
+
+        <EditText
+            android:id="@+id/notaOrden_et"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Nota"/>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATOS DEL PAGO"
+            android:textStyle="bold"
+            android:textColor="@color/color_black"
+            android:textSize="18sp"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <EditText
+                android:id="@+id/total_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="FastFood"
-                android:textSize="35dp"
-                android:textStyle="bold"
-                android:textColor="@color/color_white"
-                android:background="@color/color_naranja"/>
+                android:layout_marginBottom="20dp"
+                android:hint="Precio a pagar"/>
+
+            <EditText
+                android:id="@+id/tipoPago_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="Tipo de pago"/>
         </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ESTADO DEL PEDIDO"
+            android:textStyle="bold"
+            android:textColor="@color/color_black"
+            android:textSize="18sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
 
-        <LinearLayout>
-
+            <EditText
+                android:id="@+id/estadoOrden_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="Estado de pedido"/>
         </LinearLayout>
 
     </LinearLayout>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"/>
 
+    </ScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
