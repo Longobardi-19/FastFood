@@ -4,12 +4,12 @@
     <item
         android:id="@+id/edit_item"
         android:icon="@drawable/ic_baseline_edit_24"
-        android:title="Item"
+        android:title="@string/item"
         app:showAsAction="always"/>
     <item
         android:id="@+id/delete_item"
         android:icon="@drawable/ic_baseline_delete_24"
-        android:title="Item"
+        android:title="@string/item"
         app:showAsAction="always"/>
 
 

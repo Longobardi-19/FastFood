@@ -11,8 +11,9 @@
         android:theme="@style/Theme.FastFood">
         <activity android:name=".LoginActivity" android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".MainActivity"  />
-        <activity android:name=".OrderActivity" />
         <activity android:name=".NuevaOrderActivity"/>
+        <activity android:name=".OrderActivity" />
+
         <activity
             android:name=".SplashScreen"
             android:exported="true">
