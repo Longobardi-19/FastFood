@@ -11,8 +11,10 @@ class OrderAdapter (private val mContext: Context,
                     private val listaOrders: List<Order>):
     ArrayAdapter<Order>(mContext, 0,listaOrders){
        override fun getView(position: Int, convertView: View?, parent: ViewGroup):View{
-           val layout = LayoutInflater.from(mContext).inflate(R.layout.item_order,parent, false)
+           val layout = LayoutInflater.from(mContext).inflate(R.layout.item_order,
+               parent, false)
             val order = listaOrders[position]
+
 
            layout.order_id.text = order.idOrder.toString()
            layout.total.text = "S/.${order.total}"

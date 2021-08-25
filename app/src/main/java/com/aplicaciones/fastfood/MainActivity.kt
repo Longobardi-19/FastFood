@@ -9,6 +9,7 @@ import android.view.Menu
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.Observer
 import com.aplicaciones.fastfood.databinding.ActivityMainBinding
+import com.google.firebase.FirebaseAppLifecycleListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -19,7 +20,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var binding: ActivityMainBinding
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         var listaOrders = emptyList<Order>()
+
         val database = AppDatabase.getDatabase(this)
 
         database.orders().getAll().observe(this, Observer {
@@ -45,12 +46,23 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
-        floatingActionButton.setOnClickListener {
+        btn_agregar.setOnClickListener {
             val intent = Intent(this, NuevaOrderActivity::class.java)
             startActivity(intent)
         }
 
 
+
+        binding.salir.setOnClickListener{
+            signOut()
+        }
+
+    }
+
+    private fun signOut(){
+        Firebase.auth.signOut()
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
     }
 
     /*override fun onCreateOptionsMenu(menu: Menu?): Boolean {

@@ -19,8 +19,9 @@ class Order (
     val direccion: String,
     val referencia: String,
     val estadoOrden: String,
-    val imagen: Int,
     val total: Double,
+    val imagen: Int,
+
     @PrimaryKey(autoGenerate = true)
     var idOrder: Int=0
 

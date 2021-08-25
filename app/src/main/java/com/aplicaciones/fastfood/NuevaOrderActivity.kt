@@ -48,7 +48,7 @@ class NuevaOrderActivity : AppCompatActivity() {
 
 
             val order = Order( pedido, precio, cantidad, fecha, cliente, tipoPago, notaOrden,
-            direccion, referencia, estadoOrden, R.drawable.order, total)
+            direccion, referencia, estadoOrden, total, R.drawable.order)
 
             if( idOrder != null){
                 CoroutineScope(Dispatchers.IO).launch{
