@@ -11,7 +11,7 @@ import android.view.animation.AnimationUtils
 import android.widget.ImageView
 
 class SplashScreen : Activity() {
-    val SPLASH_CREEN = 4000
+    val SPLASH_CREEN = 3000
     private lateinit var desplazamiento_arriba: Animation
     private lateinit var desplazamiento_abajo: Animation
 

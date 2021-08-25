@@ -19,20 +19,20 @@ class OrderActivity : AppCompatActivity() {
     private lateinit var order: Order
     private  lateinit var orderLiveData: LiveData<Order>
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_order)
 
         database = AppDatabase.getDatabase(this)
+
         val idOrder = intent.getIntExtra("id",0)
 
         orderLiveData = database.orders().get(idOrder)
 
         orderLiveData.observe(this, Observer {
             order = it
+
             pedido_order.text = order.pedido
-            order_id.text = order.idOrder.toString()
             precio_order.text = "S/.${order.precio}"
             cantidad_order.text = order.cantidad.toString()
             fecha_order.text = order.fecha
@@ -42,6 +42,7 @@ class OrderActivity : AppCompatActivity() {
             direccion_order.text = order.direccion
             referencia_order.text = order.referencia
             estadoOrden_order.text = order.estadoOrden
+            order_id.text = order.idOrder.toString()
 
         })
 
