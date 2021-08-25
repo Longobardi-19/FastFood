@@ -29,25 +29,6 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-<<<<<<< HEAD
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Total "
-                android:textStyle="bold"
-                android:textSize="16dp" />
-        <TextView
-            android:id="@+id/total"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0.00"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/pedido" />
-        </LinearLayout>
-
-    </LinearLayout>
-=======
                     android:id="@+id/order_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -70,7 +51,6 @@
                     android:textStyle="bold"
                     app:layout_constraintStart_toEndOf="@+id/imageView"
                     app:layout_constraintTop_toBottomOf="@+id/order_id" />
->>>>>>> f5b364888251a4a77dfd822741c222420a8d6165
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
