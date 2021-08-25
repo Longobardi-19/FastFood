@@ -1,7 +1,10 @@
 package com.aplicaciones.fastfood
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.AttributeSet
+import android.view.View
 import kotlinx.android.synthetic.main.activity_nueva_order.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -13,6 +16,7 @@ class NuevaOrderActivity : AppCompatActivity() {
         setContentView(R.layout.activity_nueva_order)
 
         var idOrder: Int? = null
+
         if(intent.hasExtra("order")){
             val order = intent.extras?.getSerializable("order")as Order
 
@@ -68,4 +72,6 @@ class NuevaOrderActivity : AppCompatActivity() {
 
         }
     }
+
+
 }
