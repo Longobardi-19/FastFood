@@ -2,9 +2,15 @@
     <!-- Base application theme. -->
     <style name="Theme.FastFood" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-
-        <!-- Status bar color. -->
+        <item name="colorPrimary">@color/color_naranja</item>
+        <item name="colorPrimaryVariant">@color/color_tamarindo</item>
+        <item name="colorOnPrimary">@color/color_naranja</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_maracuya</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/color_maracuya</item>
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
     </style>
 </resources>
