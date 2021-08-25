@@ -52,7 +52,6 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
         binding.salir.setOnClickListener{
             signOut()
         }
@@ -64,35 +63,5 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
     }
-
-    /*override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.order_menu, menu)
-
-        return super.onCreateOptionsMenu(menu)
-    }
-*/
-
-    /*override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
-        if(keyCode== KeyEvent.KEYCODE_BACK){
-           var builder = AlertDialog.Builder(this)
-
-            builder.setMessage("Desea salir de la app?")
-                .setPositiveButton("Si", DialogInterface.OnClickListener{
-                dialog , id -> finish()
-                    fun onClick( dialog:DialogInterface? , which : Int){
-                        intent.addCategory(Intent.CATEGORY_HOME)
-                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                        startActivity(intent)
-
-                    }
-                })
-                .setNegativeButton("Cancelar",DialogInterface.OnClickListener(){
-                        dialog, id -> dialog.cancel()
-                })
-            builder.show();
-        }
-        return super.onKeyDown(keyCode, event)
-
-    }*/
 
 }
