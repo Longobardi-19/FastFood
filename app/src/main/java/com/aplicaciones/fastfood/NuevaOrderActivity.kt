@@ -53,7 +53,9 @@ class NuevaOrderActivity : AppCompatActivity() {
             if( idOrder != null){
                 CoroutineScope(Dispatchers.IO).launch{
                     order.idOrder= idOrder
+
                     database.orders().update(order)
+
                     this@NuevaOrderActivity.finish()
                 }
             }else{
