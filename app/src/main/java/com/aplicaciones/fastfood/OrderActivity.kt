@@ -32,13 +32,12 @@ class OrderActivity : AppCompatActivity() {
         orderLiveData.observe(this, Observer {
             order = it
 
-            pedido_order.text = order.pedido
+           pedido_order.text = order.pedido
             precio_order.text = "S/.${order.precio}"
-            cantidad_order.text = order.cantidad.toString()
+           cantidad_order.text = order.cantidad.toString()
             fecha_order.text = order.fecha
             cliente_order.text = order.cliente
-            tipoPago_order.text = order.tipoPago
-            notaOrden_order.text = order.notaOrden
+           tipoPago_order.text = order.tipoPago
             direccion_order.text = order.direccion
             referencia_order.text = order.referencia
             estadoOrden_order.text = order.estadoOrden

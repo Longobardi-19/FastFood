@@ -281,39 +281,6 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/nota"/>
-                </LinearLayout>
-
-                <RelativeLayout
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:ellipsize="end"
-                    android:lines="1"
-                    android:background="@drawable/shape_topico_pedido">
-
-                    <TextView
-                        android:id="@+id/notaOrden_order"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Con todas sus cremas" />
-
-                </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="vertical"
-                android:layout_margin="10.5dp">
-                <LinearLayout
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:text="@string/detalle_envio"/>
                 </LinearLayout>
 

@@ -15,7 +15,6 @@ class Order (
     val fecha: String,
     val cliente: String,
     val tipoPago: String,
-    val notaOrden: String,
     val direccion: String,
     val referencia: String,
     val estadoOrden: String,
