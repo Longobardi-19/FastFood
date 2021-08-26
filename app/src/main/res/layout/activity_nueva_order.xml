@@ -10,71 +10,72 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_marginTop="5dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="DATOS DEL CLIENTE"
             android:textStyle="bold"
             android:textColor="@color/color_black"
             android:textSize="18sp"
+            android:textAlignment="center"
             />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="10dp">
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp">
             <EditText
                 android:id="@+id/cliente_et"
-                android:layout_width="match_parent"
+                android:layout_width="392dp"
                 android:layout_height="wrap_content"
-
                 android:hint="Nombres y Apellidos"/>
 
             <EditText
                 android:id="@+id/direccion_et"
-                android:layout_width="match_parent"
+                android:layout_width="392dp"
                 android:layout_height="wrap_content"
-
                 android:hint="Dirección"/>
 
             <EditText
                 android:id="@+id/referencia_et"
-                android:layout_width="match_parent"
+                android:layout_width="392dp"
                 android:layout_height="wrap_content"
-
                 android:hint="Referencia"/>
-
-
         </LinearLayout>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="DATOS DEL PEDIDO"
             android:textStyle="bold"
             android:textColor="@color/color_black"
             android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_marginTop="160dp"
             />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="10dp">
+            android:gravity="center_horizontal"
+            android:layout_marginTop="175dp">
             <EditText
                 android:id="@+id/fecha_et"
-                android:layout_width="match_parent"
+                android:layout_width="392dp"
                 android:layout_height="match_parent"
                 android:hint="Fecha"/>
 
             <EditText
                 android:id="@+id/pedido_et"
-                android:layout_width="match_parent"
+                android:layout_width="392dp"
                 android:layout_height="wrap_content"
-                android:hint="Pedido"/>
+
+                android:hint="Pedido" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -97,12 +98,14 @@
         </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="DATOS DEL PAGO"
             android:textStyle="bold"
             android:textColor="@color/color_black"
             android:textSize="18sp"
+            android:layout_marginTop="315dp"
+            android:textAlignment="center"
             />
 
         <LinearLayout
@@ -110,7 +113,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_horizontal"
-            android:layout_margin="10dp">
+            android:layout_marginTop="340dp">
 
             <EditText
                 android:id="@+id/total_et"
@@ -125,29 +128,34 @@
                 android:hint="Tipo de pago"/>
         </LinearLayout>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ESTADO DEL PEDIDO"
             android:textStyle="bold"
             android:textColor="@color/color_black"
             android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_marginTop="395dp"
             />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="10dp">
+            android:layout_marginTop="420dp"
+            android:gravity="center_horizontal">
 
             <EditText
                 android:id="@+id/estadoOrden_et"
-                android:layout_width="match_parent"
+                android:layout_width="392dp"
                 android:layout_height="wrap_content"
                 android:hint="Estado de pedido"/>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="480dp">
             <Button
                 android:id="@+id/save_btn"
                 android:layout_width="wrap_content"
