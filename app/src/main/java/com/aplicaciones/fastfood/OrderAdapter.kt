@@ -16,7 +16,7 @@ class OrderAdapter (private val mContext: Context,
             val order = listaOrders[position]
 
 
-           layout.order_id.text = order.idOrder.toString()
+           layout.id_order.text = order.idOrder.toString()
            layout.total.text = "S/.${order.total}"
            layout.imageView.setImageResource(order.imagen)
            return layout

@@ -41,7 +41,7 @@ class OrderActivity : AppCompatActivity() {
             direccion_order.text = order.direccion
             referencia_order.text = order.referencia
             estadoOrden_order.text = order.estadoOrden
-            order_id.text = order.idOrder.toString()
+            //order_id.text = order.idOrder.toString()
             precioTotal_order.text = "S/.${order.total.toString()}"
 
         })

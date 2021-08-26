@@ -18,7 +18,7 @@ class NuevaOrderActivity : AppCompatActivity() {
 
             pedido_et.setText(order.pedido)
             precio_et.setText(order.precio.toString())
-            cantidad_et.setText(order.cantidad)
+            cantidad_et.setText(order.cantidad.toString())
             fecha_et.setText(order.fecha)
             cliente_et.setText(order.cliente)
             tipoPago_et.setText(order.tipoPago)
@@ -35,7 +35,7 @@ class NuevaOrderActivity : AppCompatActivity() {
         save_btn.setOnClickListener{
             val pedido = pedido_et.text.toString()
             val precio = precio_et.text.toString().toDouble()
-            val cantidad = cantidad_et.text.toString().toInt()
+            val cantidad = cantidad_et.text.toString().toDouble()
             val fecha = fecha_et.text.toString()
             val cliente = cliente_et.text.toString()
             val tipoPago = tipoPago_et.text.toString()
