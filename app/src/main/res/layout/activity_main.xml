@@ -30,16 +30,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"/>
 
     <ListView
         android:id="@+id/lista"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-72dp"
-        tools:layout_editor_absoluteY="-16dp">
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
 
     </ListView>

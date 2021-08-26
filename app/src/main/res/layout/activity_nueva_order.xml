@@ -61,7 +61,9 @@
         android:orientation="vertical">
             <EditText
                 android:id="@+id/fecha_et"
-                android:inputType="text"
+
+                android:inputType="date"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
